@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLink - Recolección</title>
+  <link rel="stylesheet" href="principal.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <main>
+    <section class="recoleccion-section">
+      <h1>🚛 Recolección de Canecas</h1>
+      <p>Selecciona la caneca recolectada y registra la evidencia:</p>
+
+      <ul class="canecas-list">
+        <li class="caneca roja">
+          <span>Caneca 1</span>
+          <span>❤️ 95% (Lleno)</span>
+          <button class="recoger-btn" data-caneca="1">✅ Recolectar</button>
+        </li>
+        <li class="caneca amarilla">
+          <span>Caneca 2</span>
+          <span>💛 70% (Medio)</span>
+          <button class="recoger-btn" data-caneca="2">✅ Recolectar</button>
+        </li>
+        <li class="caneca verde">
+          <span>Caneca 3</span>
+          <span>💚 30% (Disponible)</span>
+          <button class="recoger-btn" data-caneca="3">✅ Recolectar</button>
+        </li>
+      </ul>
+
+      <div class="ruta-sugerida">
+        <h2>🗺️ Ruta sugerida</h2>
+        <div id="mapRuta"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MENÚ INFERIOR -->
+  <nav class="bottom-nav">
+    <a href="principal.html" class="nav-item">🏠<span>Inicio</span></a>
+    <a href="canecas.html" class="nav-item">♻️<span>Canecas</span></a>
+    <a href="recoleccion.html" class="nav-item trabajador-only">🚛<span>Recolectar</span></a>
+    <a href="perfil.html" class="nav-item">👤<span>Perfil</span></a>
+  </nav>
+
+  <!-- Modal de recolección -->
+  <div id="recogerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeRecoger">&times;</span>
+      <h2>Registrar Recolección</h2>
+      <form id="recogerForm">
+        <p id="recogerCaneca">Caneca seleccionada: </p>
+        <label for="foto">📷 Foto de evidencia:</label>
+        <input type="file" id="foto" accept="image/*" required><br><br>
+        <textarea placeholder="Comentario adicional (opcional)" rows="3"></textarea><br>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="popupMessage" class="popup">✅ ¡Recolección registrada!</div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

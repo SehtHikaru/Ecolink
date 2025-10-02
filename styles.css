@@ -1,0 +1,134 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fbe7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER (Portada)
+========================= */
+header.portada {
+  background: linear-gradient(rgba(165, 214, 167, 0.9), rgba(56, 142, 60, 0.9)),
+              url('images/bin.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.portada-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header.portada h1 {
+  margin: 1rem 0 0.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+header.portada .subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #f1f8e9;
+}
+
+header.portada .logo {
+  max-width: 150px;
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   SECCIONES
+========================= */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  background: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+section ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   MULTIMEDIA
+========================= */
+iframe {
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+video {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.imagen {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* =========================
+   BOTONES Y ENLACES
+========================= */
+a {
+  color: #1b5e20;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #2e7d32;
+  color: white;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #a5d6a7;
+  margin-top: 2rem;
+  color: #1b5e20;
+  font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLink - Canecas</title>
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+  <!-- LISTA DE CANECAS -->
+  <section class="canecas-section">
+    <h1>Canecas Cercanas</h1>
+    <ul class="canecas-list">
+      <li class="caneca verde">
+        <div class="caneca-info">
+          <img src="images/bin.png" alt="Caneca" class="caneca-img">
+          <span>Caneca #1</span>
+        </div>
+        <div class="acciones">
+          <button class="detalles-btn" data-id="1">ℹ️ Ver detalles</button>
+          <button class="report-btn" data-caneca="1">📢 Reportar</button>
+        </div>
+      </li>
+      <li class="caneca amarilla">
+        <div class="caneca-info">
+          <img src="images/bin.png" alt="Caneca" class="caneca-img">
+          <span>Caneca #2</span>
+        </div>
+        <div class="acciones">
+          <button class="detalles-btn" data-id="2">ℹ️ Ver detalles</button>
+          <button class="report-btn" data-caneca="2">📢 Reportar</button>
+        </div>
+      </li>
+      <li class="caneca roja">
+        <div class="caneca-info">
+          <img src="images/bin.png" alt="Caneca" class="caneca-img">
+          <span>Caneca #3</span>
+        </div>
+        <div class="acciones">
+          <button class="detalles-btn" data-id="3">ℹ️ Ver detalles</button>
+          <button class="report-btn" data-caneca="3">📢 Reportar</button>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- MODAL DE DETALLES -->
+  <div id="detallesModal" class="modal">
+    <div class="modal-content">
+      <span id="closeDetalles" class="close-btn">&times;</span>
+      <h2>Detalles de la Caneca</h2>
+      <img src="images/bin.png" alt="Detalle Caneca" class="detalle-img">
+      <p id="detallesInfo">Información de la caneca seleccionada.</p>
+    </div>
+  </div>
+
+  <!-- MODAL DE REPORTE -->
+  <div id="reportModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <h2>Reportar Caneca</h2>
+      <p id="reportCaneca">Caneca seleccionada:</p>
+      <form id="reportForm">
+        <textarea rows="4" placeholder="Escribe tu reporte aquí..."></textarea>
+        <button type="submit">Enviar reporte</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- POPUP CONFIRMACIÓN -->
+  <div id="popupMessage" class="popup">✅ ¡Reporte enviado con éxito!</div>
+
+  <!-- MENÚ INFERIOR -->
+  <nav class="bottom-nav">
+    <a href="principal.html" class="nav-item">🏠<span>Inicio</span></a>
+    <a href="canecas.html" class="nav-item">♻️<span>Canecas</span></a>
+    <a href="recoleccion.html" class="nav-item trabajador-only">🚛<span>Recolectar</span></a>
+    <a href="perfil.html" class="nav-item">👤<span>Perfil</span></a>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>

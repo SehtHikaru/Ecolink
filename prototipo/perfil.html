@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLink - Perfil</title>
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+  <main class="perfil-section">
+    <div class="perfil-card">
+      <img src="images/perfil.png" alt="Foto de perfil" class="perfil-img">
+      <h2 class="profile-name">Juan Pérez</h2>
+      <p>📧 juan.perez@ejemplo.com</p>
+      <p class="trabajador-only">🏢 Empresa: EcoLink Bogotá</p>
+      <p class="trabajador-only">🆔 Carnet: 12345</p>
+
+      <div class="perfil-actions">
+        <button class="perfil-btn editar">✏️ Editar perfil</button>
+        <button class="perfil-btn password">🔒 Cambiar contraseña</button>
+        <button class="perfil-btn logout" id="logoutBtn">🚪 Cerrar sesión</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- MENÚ INFERIOR -->
+  <nav class="bottom-nav">
+    <a href="principal.html" class="nav-item">🏠<span>Inicio</span></a>
+    <a href="canecas.html" class="nav-item">♻️<span>Canecas</span></a>
+    <a href="recoleccion.html" class="nav-item trabajador-only">🚛<span>Recolectar</span></a>
+    <a href="perfil.html" class="nav-item">👤<span>Perfil</span></a>
+  </nav>
+
+  <div id="popupMessage" class="popup"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

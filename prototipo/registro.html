@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLink - Registro</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">🌱 EcoLink</h1>
+    <form id="registroForm" class="form">
+      <h2>Registro</h2>
+
+      <label for="tipo" class="form-label">Tipo de cuenta:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecciona...</option>
+        <option value="usuario">Usuario</option>
+        <option value="trabajador">Trabajador</option>
+      </select>
+
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+
+      <!-- Campos adicionales para trabajador -->
+      <div id="extraFields" style="display: none;">
+        <input type="tel" placeholder="Número de celular">
+        <input type="text" placeholder="Número de carnet">
+        <input type="text" placeholder="Empresa">
+      </div>
+
+      <button type="submit">Registrarse</button>
+      <p>¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a></p>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

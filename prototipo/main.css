@@ -1,0 +1,167 @@
+/* =========================
+   RESET & GENERALES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo EcoLink */
+.logo {
+  font-size: 2rem;
+  color: #388e3c;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+.form h2 {
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.form input, .form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #c8e6c9;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form input:focus, .form select:focus {
+  outline: none;
+  border-color: #66bb6a;
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #388e3c;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2e7d32;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #388e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+/* Etiquetas */
+.form-label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Select */
+select {
+  appearance: none;
+  background: #f1f8e9;
+  cursor: pointer;
+}
+
+/* Div de campos extra */
+#extraFields {
+  margin-top: 0.5rem;
+}
+
+
+/* =========================
+   BLOQUE DE CREDENCIALES DEMO
+========================= */
+form hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid #c8e6c9;
+}
+
+form p {
+  margin: 0.5rem 0;
+}
+
+.demo-info {
+  background: #f1f8e9;
+  border-left: 4px solid #388e3c;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #2e7d32;
+}
+
+.demo-info ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.demo-info li {
+  margin: 0.3rem 0;
+}
+
+.demo-info code {
+  background: #e8f5e9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLink - Principal</title>
+  <link rel="stylesheet" href="principal.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="map-section">
+      <h1>Mapa Interactivo</h1>
+      <div id="map"></div>
+
+      <!-- Leyenda de colores -->
+      <div class="legend">
+        <h3>Estado de Canecas</h3>
+        <ul>
+          <li>💚 0% - 40% (Disponible)</li>
+          <li>💛 40% - 80% (Medio)</li>
+          <li>❤️ 80% - 100% (Lleno)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- MENÚ INFERIOR -->
+  <nav class="bottom-nav">
+    <a href="principal.html" class="nav-item">🏠<span>Inicio</span></a>
+    <a href="canecas.html" class="nav-item">♻️<span>Canecas</span></a>
+    <a href="recoleccion.html" class="nav-item trabajador-only">🚛<span>Recolectar</span></a>
+    <a href="perfil.html" class="nav-item">👤<span>Perfil</span></a>
+  </nav>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
